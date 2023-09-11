@@ -8,6 +8,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { AddMovieComponent } from './components/home/add-movie/add-movie.component';
 import { MovieComponent } from './components/home/movie/movie.component';
 import { HomeComponent } from './components/home/home.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -17,11 +18,12 @@ import { HomeComponent } from './components/home/home.component';
     MovieComponent,
     HomeComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

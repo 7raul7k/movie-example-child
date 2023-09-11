@@ -71,4 +71,17 @@ export class HomeComponent implements OnInit{
     return sum / this.movies.length;
   }
 
+  handleAddMovie(movie : any){
+    this.movies.push({
+        id: this.movies.length + 1,
+        title: movie.title,
+        subtitle: movie.subtitle,
+        description: movie.description,
+        rating: movie.rating
+    })
+
+
+
+    }
+
 }

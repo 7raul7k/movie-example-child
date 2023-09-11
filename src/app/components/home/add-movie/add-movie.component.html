@@ -4,14 +4,17 @@
 
   <section class="create-movie">
     <label for="movie-name"> Name :</label>
-    <input type="text" name="movie-name" id="movie-name">
+    <input type="text" name="movie-name" id="movie-name" [(ngModel)]="movieTitleValue">
 
     <label for="movie-subtitle">Subtitle:</label>
-    <input type="text" name="movie-subtitle" id="movie-subtitle">
+    <input type="text" name="movie-subtitle" id="movie-subtitle" [(ngModel)]="movieSubtitleValue" >
+
+    <label for="movie-description">Subtitle:</label>
+    <input type="text" name="movie-description" id="movie-description" [(ngModel)]="movieDescriptionValue" >
 
     <label for="movie-rating">Rating:</label>
-    <input type="number" name="movie-rating" id="movie-rating">
+    <input type="number" name="movie-rating" id="movie-rating" [(ngModel)]="movieRatingValue">
   </section>
 
-  <button type="submit"> Add Movie</button>
+  <button type="submit" (click)="onAddMovie()"> Add Movie</button>
 </div>
