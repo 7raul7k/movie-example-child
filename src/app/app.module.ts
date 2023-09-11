@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import {HttpClientModule} from "@angular/common/http";
 import { AddMovieComponent } from './components/add-movie/add-movie.component';
+import { MovieComponent } from './components/movie/movie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    AddMovieComponent
+    AddMovieComponent,
+    MovieComponent
   ],
   imports: [
     BrowserModule,
