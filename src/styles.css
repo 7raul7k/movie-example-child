@@ -1,1 +1,119 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background: rgb(9,2,124);
+  background: linear-gradient(90deg, rgba(9,2,124,1) 0%, rgba(14,160,207,1) 39%, rgba(11,193,29,1) 100%);  display: flex;
+  flex-direction: column;
+
+
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.cards-list-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+
+
+}
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 420px;
+  border: 3px solid white;
+
+  overflow: hidden;
+  margin-top: 10px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,49,121,1) 35%, rgba(0,212,255,1) 100%);
+  color: gainsboro;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+
+}
+
+.card-title{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 40px;
+}
+
+.card-sub-title{
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.card-info,.card-rating{
+  font-size: 16px;
+  line-height: 22px;
+  margin: 40px 0;
+  font-weight: 300;
+}
+
+
+.card-buttons-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+  height: 10%;
+  margin-left: 10px;
+  justify-content: space-evenly;
+}
+
+
+.add-movie-container{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  justify-content: space-around;
+  background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+}
+
+
+.add-movie-container >button{
+  width: 70px;
+  height: 30px;
+}
+
+button{
+  width: 19%;
+  height:40px;
+  color: black;
+  border: 1.5px solid black;
+  background-color:cyan;
+  font-weight: 500;
+}
+
+button:active{
+
+  background-color: blue;
+}
