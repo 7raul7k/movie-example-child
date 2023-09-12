@@ -79,9 +79,16 @@ export class HomeComponent implements OnInit{
         description: movie.description,
         rating: movie.rating
     })
+    }
 
+    handleDeleteMovie(event: {id: number }){
+
+      this.movies = this.movies.filter(movie => movie.id !== event.id);
 
 
     }
+
+
+
 
 }

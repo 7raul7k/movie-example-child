@@ -22,11 +22,10 @@ body{
 
 .cards-list-container{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-flow: row wrap;
+
   width: 100%;
-  height: auto;
+
 
 
 }

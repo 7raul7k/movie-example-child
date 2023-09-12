@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Movie} from "../models/Movie";
 
 @Component({
@@ -16,12 +16,19 @@ export class MovieComponent  implements OnInit{
     rating: 0,
   }
 
+  @Output() deleteMovie = new EventEmitter<{id : number}>();
+
     constructor() {
 
     }
 
     ngOnInit() {
 
+    }
+
+    onDeleteMovie(){
+
+        this.deleteMovie.emit({id:this.allMovies.id});
     }
 
 }
