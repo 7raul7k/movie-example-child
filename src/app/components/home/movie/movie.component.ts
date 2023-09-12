@@ -16,6 +16,8 @@ export class MovieComponent  implements OnInit{
     rating: 0,
   }
 
+  @Output() changeScore = new EventEmitter<{ id: number, score: number }>();
+
   @Output() deleteMovie = new EventEmitter<{id : number}>();
 
     constructor() {
@@ -31,4 +33,7 @@ export class MovieComponent  implements OnInit{
         this.deleteMovie.emit({id:this.allMovies.id});
     }
 
+    onChangeScore(value: number) {
+        this.allMovies.rating += value;
+    }
 }

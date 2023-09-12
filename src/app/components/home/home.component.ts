@@ -88,6 +88,15 @@ export class HomeComponent implements OnInit{
 
     }
 
+  handleChangeScore(event:{id:number,score:number}){
+
+   for (let i = 0; i < this.movies.length; i++){
+      if(this.movies[i].id === event.id){
+        this.movies[i].rating += event.score;
+      }
+   }
+  }
+
 
 
 
